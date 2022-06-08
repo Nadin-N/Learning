@@ -1,0 +1,212 @@
+@font-face {
+	font-family: "Roboto 400";
+	src: url("../assets/fonts/Roboto-Regular.ttf");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Roboto 500";
+	src: url("../assets/fonts/Roboto-Medium.ttf");
+	font-style: normal;
+	font-weight: 500;
+}
+
+body {
+	font-family: 'Roboto 400';
+	text-align: center;
+	font-size: 16px;
+	line-height: 26.5px;
+}
+
+.main {
+	width: 1920px;
+	height: 700px;
+}
+
+.main .menu {
+	display: flex;
+	margin-left: 399px;
+	margin-top: 79px;
+
+}
+
+.main .menu a {
+	margin-right: 42px;
+	text-align: left;
+	font-family: 'Roboto 500';
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.1em;
+	color: black;
+	list-style: none;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.main .menu a:first-child {
+	color: #34547A;
+}
+
+.main .design {
+	margin-left: 399px;
+	margin-top: 162px;
+	text-align: left;
+
+}
+
+.main .design h2 {
+	font-family: 'Roboto 500';
+	font-style: normal;
+	font-size: 48px;
+	line-height: 79px;
+	color: #000000;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	font-weight: 500;
+}
+
+.main .design p {
+	width: 540px;
+	height: 67px;
+	margin-top: 60px;
+	margin-bottom: 0;
+	color: #727272;
+
+}
+
+.main .button {
+	width: 225px;
+	height: 65px;
+	left: 399px;
+	background: #34547A;
+	margin-top: 65px;
+	border: none;
+	padding: 0;
+}
+
+.main .button span {
+	font-family: 'Roboto 400';
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.about .aboutme h3,
+.work .working h3 {
+	font-family: 'Roboto 500';
+	font-size: 32px;
+	line-height: 38px;
+	color: #000000;
+	margin-top: 112px;
+	width: 403px;
+	height: 30px;
+	margin-left: 758px;
+	font-weight: 500;
+
+}
+
+.about .aboutme p,
+.work .working p {
+	width: 540px;
+	height: 67px;
+	margin-left: 690px;
+	color: #727272;
+	margin-top: 50px;
+}
+
+.projects {
+	width: 1920px;
+	height: 250px;
+	background: #34547A;
+	margin-top: 100px;
+}
+
+.projects .pictures {
+	display: flex;
+	list-style: none;
+	margin-left: 409px;
+	padding: 0;
+}
+
+.projects .pictures .number {
+	display: flex;
+	height: 50px;
+	width: 50px;
+	margin-top: 100px;
+	margin-right: 136px;
+	color: white;
+
+}
+
+.projects .pictures .number .disc {
+	display: block;
+	margin-left: 20px;
+}
+
+
+.projects .pictures .number .disc p {
+	margin: 0;
+}
+
+.projects .pictures .number .disc p:first-child {
+	font-family: 'Roboto 500';
+	font-size: 21px;
+	line-height: 25px;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.work {
+	width: 1920px;
+	height: 854px;
+	margin-top: 100px;
+}
+
+.work .video {
+	width: 1110px;
+	height: 600px;
+	margin-left: 405px;
+	margin-top: 57px;
+}
+
+video[poster] {
+	width: 1110px;
+	height: 600px;
+}
+
+.data {
+	background: #34547A;
+	width: 1920px;
+	height: 151px;
+	display: flex;
+	margin-top: 50px;
+}
+
+.data .contacts {
+	display: block;
+	text-align: left;
+	margin-left: 406px;
+	color: white;
+	margin-top: 50px;
+}
+
+.data .contacts p:first-child {
+	font-family: 'Roboto 500';
+	font-size: 21px;
+	line-height: 25px;
+	margin: 0;
+	font-weight: 500;
+	font-style: normal;
+
+}
+
+.data .contacts p:last-child {
+	font-size: 13px;
+	line-height: 21px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
