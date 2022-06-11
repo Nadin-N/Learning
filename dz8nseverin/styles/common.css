@@ -1,0 +1,68 @@
+.block {
+	border: 1px solid rgb(28, 121, 5);
+	padding: 5px;
+	margin: 5px;
+	width: 98%;
+	display: inline-block;
+}
+
+.figure-left,
+.figure-left-new,
+.figure-right-new,
+.figure-right {
+	background-color: darkcyan;
+	margin: 15px;
+	border: 2px solid rgb(18, 73, 18);
+}
+
+.figure-right {
+	float: right;
+}
+
+.figure-left {
+	float: left;
+}
+
+.clearfix::after,
+.clearfix::before {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.size1 {
+	width: 100px;
+	height: 100px;
+}
+
+.size2 {
+	width: 50px;
+	height: 50px;
+	top: 50%;
+	transform: translate(0, 50%)
+}
+
+.size3 {
+	width: 150px;
+	height: 150px;
+}
+
+.size4 {
+	width: 100px;
+	height: 50px;
+
+}
+
+.left {
+	width: 50%;
+	float: left;
+}
+
+.right {
+	width: 50%;
+	float: right;
+}
+
+.right-new {
+	float: right;
+}
