@@ -1,0 +1,386 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.42em;
+	background: #E5E5E5;
+}
+
+.conteiner {
+	border-color: #E5E5E5;
+	width: 1110px;
+	margin: 0 auto;
+}
+
+.conteiner2 {
+	width: 1920px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.promo .feature {
+	margin: 16px auto;
+	text-align: center;
+}
+
+.promo .feature a {
+	line-height: 1.14px;
+	color: #333333;
+}
+
+.promo .feature a:not(last-child) {
+	margin-right: 30px;
+}
+
+.clearfix::after,
+.clearfix::before {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.signboard {
+	margin-top: 36px;
+	position: relative;
+}
+
+.signboard .title {
+	float: left;
+}
+
+.signboard .title img {
+	width: 80px;
+	height: 80px;
+}
+
+.signboard .title h1 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #F13C6E;
+	position: absolute;
+	top: 50%;
+	margin-top: -21px;
+	margin-left: 20px;
+}
+
+.signboard .calling,
+.contacts .calling {
+	float: right;
+}
+
+.signboard .button1,
+.signboard .tel,
+.contacts .button1,
+.contacts .tel {
+	margin-top: 35px;
+	margin-left: 40px;
+}
+
+.signboard .button1 a,
+.contacts .button1 a {
+	line-height: 1.14;
+	color: #000000;
+	border: 2px solid #F13C6E;
+	border-radius: 40px;
+	padding: 12px 26px;
+}
+
+.signboard .tel,
+.menu a,
+.contacts .tel {
+	font-size: 16px;
+	line-height: 1.19em;
+	color: #000000;
+}
+
+.menu {
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 70px;
+}
+
+.menu a:not(last-child) {
+	margin-right: 40px;
+}
+
+.wallpaper img {
+	position: relative;
+}
+
+.action-item {
+	position: absolute;
+	margin-top: -400px;
+	margin-left: 400px;
+}
+
+.action-item h2 {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 1.17em;
+	color: #FFFFFF;
+}
+
+.action-item p {
+	color: #FFFFFF;
+	width: 308px;
+	height: 35px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.action-item a {
+	color: #FFFFFF;
+	line-height: 1.14em;
+	border: 2px solid #FFFFFF;
+	border-radius: 40px;
+	padding: 12px 47px;
+}
+
+.special-items,
+.viewed,
+.popular {
+	height: 430px;
+	margin-top: 80px;
+}
+
+.special-items h2,
+.viewed h2 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.17px;
+	color: #000000;
+	margin-bottom: 63px;
+}
+
+.special-items .list li,
+.viewed .list li {
+	width: 255px;
+	height: 363px;
+	float: left;
+}
+
+.special-items .list li:not(:last-child),
+.viewed .list li:not(:last-child) {
+	margin-right: 30px;
+}
+
+.special-items .list li img,
+.viewed .list li img {
+	background: url(shop_items_catalog_image5912.jpg), #C4C4C4;
+	margin: 0 65px;
+}
+
+.special-items .list li h3,
+.viewed .list li h3 {
+	text-align: center;
+	color: #333333;
+	width: 195px;
+	height: 33px;
+	margin: 20px auto;
+}
+
+.price {
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 1.19em;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.special-items .list li a,
+.viewed .list li a {
+	line-height: 1.14em;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	padding: 9px 40px;
+	background: #F13C6E;
+	border-radius: 30px;
+	margin: 0 63px;
+}
+
+.proposition .conteiner {
+	display: inline-block;
+}
+
+.proposition .offer1,
+.proposition .offer2 {
+	width: 540px;
+	height: 212px;
+	box-sizing: border-box;
+	background: #F13C6E;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.proposition .offer1 {
+	margin-right: 26px;
+}
+
+.proposition .offer1 .bonuses {
+	width: 50%;
+	height: 140px;
+	display: inline-block;
+	margin: 35px;
+}
+
+.proposition .offer1 .logo-propose {
+	width: 35%;
+	height: 140px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 53px;
+}
+
+.proposition .offer1 .bonuses h3,
+.proposition .offer2 .wellcome h3 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.16em;
+	color: #FFFFFF;
+	margin-bottom: 25px;
+}
+
+.proposition .offer1 .bonuses p {
+	color: #FFFFFF;
+	width: 270px;
+	height: 40px;
+	margin-bottom: 25px;
+}
+
+.proposition .offer1 .bonuses input {
+	background-color: #fff;
+	border-radius: 30px;
+	border: none;
+	height: 35px;
+	width: 225px;
+
+}
+
+input::placeholder {
+	line-height: 1.14em;
+	color: #C4C4C4;
+	padding-left: 25px;
+}
+
+.proposition .offer2 .wellcome,
+.proposition .offer2 .logo-propose {
+	width: 35%;
+	height: 140px;
+	display: inline-block;
+	margin: 35px;
+}
+
+.proposition .offer2 .wellcome a {
+	text-align: center;
+	color: #FFFFFF;
+	line-height: 1.14em;
+	border: 2px solid #FFFFFF;
+	border-radius: 40px;
+	padding: 9px 28px;
+}
+
+.proposition .offer2 .wellcome p {
+	color: #FFFFFF;
+	width: 180px;
+	height: 40px;
+	margin-bottom: 25px;
+}
+
+.images {
+	margin-top: 100px;
+	background: #FFFFFF;
+}
+
+.images .image-list {
+	margin: 35px 60px;
+	display: inline-block;
+}
+
+.popular .categories {
+	width: 100px;
+	display: inline-block;
+	float: left;
+}
+
+.popular .categories:not(:last-child) {
+	margin-right: 186px;
+}
+
+.popular .categories h2 {
+	font-weight: 500;
+	font-size: 16px;
+	color: #000000;
+}
+
+.popular .categories a {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 2.33em;
+	color: #828282;
+	display: block;
+}
+
+.popular .categories nav {
+	margin-top: 55px;
+}
+
+.social {
+	float: left;
+}
+
+.contacts {
+	float: right;
+}
+
+.social .logo {
+	width: 45px;
+	height: 45px;
+	/* line-height: 45; */
+	border: 2px solid #F13C6E;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 16px;
+}
+
+img[alt="youtube-logo"] {
+	transform: translate(55%, 85%);
+}
+
+img[alt="VK-logo"] {
+	transform: translate(9px, 14px);
+}
+
+img[alt="facebook-logo"] {
+	transform: translate(17px, 12px);
+}
+
+img[alt="instagram-logo"] {
+	transform: translate(12px, 11px);
+}
+
+.rights {
+	margin-top: 38px;
+	font-size: 12px;
+	line-height: 1.16em;
+	color: #828282;
+	margin-bottom: 38px;
+
+}
+
+.RGHT {
+	float: right;
+}
+
+.LFT {
+	float: left;
+}
