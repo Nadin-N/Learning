@@ -1,0 +1,144 @@
+body {
+	background-color: rgb(124, 122, 122);
+	font-family: "Bookman Old Style normal", serif;
+	font-size: 34px;
+	text-align: justify;
+}
+
+header {
+	position: sticky;
+	top: 0px;
+	right: 0px;
+	z-index: 4;
+}
+
+nav {
+	background-color: rgba(58, 58, 58, 0.8);
+	border-bottom: 10px solid rgb(58, 133, 231);
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+}
+
+ul>li {
+	display: inline-block;
+	position: relative;
+}
+
+.menu>li>a:hover {
+	background-color: rgb(58, 133, 231);
+}
+
+.menu li:hover .submenu {
+	display: block;
+}
+
+.menu li .submenu li:hover .submenu2 {
+	display: block;
+}
+
+.submenu,
+.submenu2 {
+	display: none;
+	background-color: rgb(58, 133, 231);
+	position: absolute;
+}
+
+.submenu2 {
+	left: 100%;
+	top: -5%;
+}
+
+.menu>li>ul li:hover,
+.menu>li>ul>li a:hover {
+	background-color: rgb(108, 158, 223);
+}
+
+nav>ul>li>a {
+	text-transform: uppercase;
+	font-family: "Bookman Old Style bold", serif;
+	padding: 35px;
+}
+
+.menu>li>ul>li,
+.menu>li>ul>li>ul>li {
+	border: 5px solid rgb(29, 118, 235);
+	width: 500px;
+	height: 104px;
+	text-align: left;
+	padding: 25px 0px 20px 6px;
+	box-sizing: border-box;
+}
+
+.menu>li>ul>li:first-child {
+	border-bottom: 0px;
+	margin-top: 10px;
+}
+
+.menu>li>ul>li>ul>li:not(:last-child) {
+	border-bottom: 0px;
+}
+
+.img1 {
+	float: left;
+	position: relative;
+	z-index: 3;
+}
+
+.img2 {
+	float: right;
+	position: relative;
+	z-index: 1;
+}
+
+main {
+	padding: 20px;
+	font-size: 20px;
+	text-align: justify;
+}
+
+main h2 {
+	font-family: "Bookman Old Style bold", serif;
+	font-size: 48px;
+	text-align: center;
+	padding: 20px;
+}
+
+.modal .modal-header h3 {
+	font-family: "Bookman Old Style bold", serif;
+	font-size: 32px;
+	padding: 20px 0px;
+}
+
+.modal {
+	padding: 12px 48px;
+	background-color: #fff;
+	font-size: 16px;
+	width: 500px;
+	position: fixed;
+	top: 140px;
+	left: 50%;
+	margin-left: -250px;
+	z-index: 2;
+}
+
+.modal .modal-header {
+	position: relative;
+}
+
+.modal .modal-header .close {
+	position: absolute;
+	top: -32px;
+	right: -60px;
+	font-size: 14px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 100%;
+	color: #fff;
+	background-color: black;
+	border: 2px solid grey;
+}
