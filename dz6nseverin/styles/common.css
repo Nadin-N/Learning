@@ -5,22 +5,22 @@ body {
 }
 
 img {
+	padding-top: 20px;
 	width: 200px;
 	height: 300px;
-}
-
-ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
 }
 
 ul li {
 	border: 1px solid grey;
 	display: inline-block;
-	margin: 5px;
+	vertical-align: top;
+	margin: 0.5%;
 	padding: 3px;
 	width: 30%;
+	height: 600px;
+	background-color: cadetblue;
+}
 
-	background-color: cadetblue
+p {
+	text-align: justify;
 }
