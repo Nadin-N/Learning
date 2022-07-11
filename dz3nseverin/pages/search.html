@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration</title>
+</head>
+<body>
+	<header>
+		<div>
+			<img src="../assets/img/bus-logo.jpg" height="200" width="250" alt="NBuslogo">
+			<h1>
+				NBuses:
+			</h1>
+			<h2>
+				Наші машини - ваші досягнення!
+			</h2>
+		</div>
+		<div>
+			<nav>
+				<a href="../index.html">Головна |</a>
+				<a href="./regisration.html">Реєстрація |</a>
+				<a href="./authorization.html"> Авторизація |</a>
+			</nav>
+		</div>
+		<hr>
+	</header>
+	<main>
+		<section class="search">
+			<h2>Маємо що Вам запропонувати! <br>Оберіть, будь ласка, характеристики для Вашої майбутньої машини:
+				&#9989;</h2>
+			<form method="post" action="https://fom.in.ua/echo">
+				<div>
+					<label><b>Вживаність:</b></label>
+					<input type="radio" id="using1" name="use" value="new" required>
+					<label for="using1">Новий</label>
+					<input type="radio" id="using2" name="use" value="used">
+					<label for="using2">Б/в</label>
+				</div>
+				<br>
+				<div>
+					<label for="type"><b>Оберіть тип мікроавтобуса:</b></label>
+					<br>
+					<select id="type" name="type" multiple>
+						<option value="passenger">пасажирський</option>
+						<option value="miniven" disabled>мінівен</option>
+						<option value="mixed">вантажно-пасажирський</option>
+						<option value="cargo">вантажний</option>
+					</select>
+				</div>
+				<br>
+				<div>
+					<label for="model"><b>Зазначте марку авто:</b></label>
+					<br>
+					<select id="model" name="model">
+						<option>...</option>
+						<option>Ford</option>
+						<option>Mercedes-Benz</option>
+						<option>Hyundai</option>
+						<option>Citroen</option>
+						<option>VW</option>
+						<option>Peugeot</option>
+						<option disabled>FIAT</option>
+						<option disabled>Toyota</option>
+					</select>
+				</div>
+				<br>
+				<div>
+					<label><b>Бажаний рік випуску:</b></label>
+					<br>
+					<label for="minyear">від</label>
+					<input type="number" id="minyear" name="minyear" min="2009" max="2022" value="2009">
+					<label for="maxyear">до</label>
+					<input type="number" id="maxyear" name="maxyear" min="2009" max="2022" value="2022">
+				</div>
+				<br>
+				<div>
+					<label><b>Кількість сидінь:</b></label>
+					<br>
+					<input type="number" name="minseats" max="22" min="3" placeholder="від 3">
+					<input type="number" name="maxseats" max="22" min="3" placeholder=" до 22">
+				</div>
+				<br>
+				<div>
+					<label for="weigh"><b>Вантажомісткість, тонн:</b>
+						<br>
+						Від 0,5 т
+					</label>
+					<input type="range" id="weigh" name="weigh" step="0.5" min="0.5" max="3.5">
+					<label for="weigh">до 3,5</label>
+				</div>
+				<br>
+				<div>
+					<label for="fav-color"><b>Оберіть бажаний колір:</b></label>
+					<input type="color" id="fav-color" name="fav-color" value="#E6A9EC">
+					<br>
+				</div>
+				<div>
+					<label><b>Ціна</b></label>
+					<input type="radio" id="cur1" name="currency" value="UAH">
+					<label for="cur1">грн</label>
+					<input type="radio" id="cur2" name="currency" value="USD">
+					<label for="cur2">дол</label>
+					<br>
+					<label for="minprice">від </label>
+					<input type="number" id="minprice" name="minprice" min="0" max="150000" value="0">
+					<label for="maxprice">до </label>
+					<input type="number" id="maxprice" name="maxprice" min="1" max="150000" value="1">
+				</div>
+				<br>
+				<div>
+					<label><b>Наявність:</b></label>
+					<input type="checkbox" id="aval1" name="availability" value="present">
+					<label for="aval1">в наявності</label>
+					<input type="checkbox" id="aval2" name="availability" value="onorder">
+					<label for="aval2">під замовлення</label>
+				</div>
+				<br>
+				<div>
+					<label for="wishes"><b>Ваші побажання для замовлення:</b></label>
+					<textarea id="wishes" name="wishes"></textarea>
+					<hr>
+					<button>Пошук</button>
+					<input type="reset" name="Очистити">
+				</div>
+				<hr>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<h3>Наші контакти:</h3>
+		<ul>
+			<li>Офіс у м.Дніпро: &#9971; вул. Володимира Великого, буд.7, офіс 2</li>
+			<li>Телефон: <a href="tel:380972263232">&#9742; 38(097) 226 32 32</a> </li>
+			<li>E-mail: <a href="mailto:nvseverin@i.ua">&#9993; nvseverin@i.ua</a></li>
+			<li>Ми у соцмережах: <a href="https://www.instagram.com/accounts/login/?next=/nadinseverin/">Instagram</a>
+			</li>
+		</ul>
+		<p>&reg; NBuses</p>
+	</footer>
+</body>
+</html>

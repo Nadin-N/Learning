@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration</title>
+</head>
+<body>
+	<header>
+		<div>
+			<img src="../assets/img/bus-logo.jpg" height="200" width="250" alt="NBuslogo">
+			<h1>
+				NBuses:
+			</h1>
+			<h2>
+				Наші машини - ваші досягнення!
+			</h2>
+		</div>
+		<div>
+			<nav>
+				<a href="../index.html">Головна |</a>
+				<a href="./authorization.html"> Авторизація |</a>
+				<a href="./search.html"> Пошук авто</a>
+			</nav>
+		</div>
+		<hr>
+	</header>
+	<main>
+		<section class="registration">
+			<h2>У зареєстрованих користувачів життя простіше! <br>Введіть, будь ласка, дані для реєстрації на сайті:
+				&#9997;</h2>
+			<form method="post" action="https://fom.in.ua/echo">
+				<div>
+					<label for="name">Ім'я:</label>
+					<br>
+					<input type="text" id="name" name="fname" placeholder="Введіть ваше ім'я" required>
+				</div>
+				<div>
+					<span>Стать:</span>
+					<input type="radio" id="female" name="sex" value="жіноча">
+					<label for="female">жіноча</label>
+					<input type="radio" id="male" name="sex" value="чоловіча">
+					<label for="male">чоловіча</label>
+				</div>
+				<div>
+					<label for="birthday">Місяць та рік народження:</label>
+					<br>
+					<input type="month" id="birthday" name="birthday">
+				</div>
+				<div>
+					<label for="email">E-mail:</label>
+					<br>
+					<input type="email" id="email" name="email" placeholder="Введіть свій e-mail" required>
+				</div>
+				<div>
+					<label for="tel">Ваш номер телефона:<br>
+						+38</label>
+					<input type="tel" id="tel" name="phone" placeholder="Введіть номер телефона" pattern="[0-9]{10}"
+						required>
+					<br>
+					<small>Номер у форматі: 0972222222</small><br>
+				</div>
+				<div>
+					<label for="password">Ваш пароль:</label>
+					<br>
+					<input type="password" id="password" name="password" placeholder="Придумайте пароль" required>
+					<br>
+					<label for="repeat">Повторіть пароль:</label>
+					<br>
+					<input type="password" id="repeat" name="repeat-password" placeholder="Повторіть пароль" required>
+				</div>
+				<br>
+				<input type="hidden" name="userID" value="1127">
+				<input type="submit" value="Зареєструватись">
+				<input type="reset" value="Очистити дані">
+			</form>
+			<hr>
+		</section>
+	</main>
+	<footer>
+		<h3>Наші контакти:</h3>
+		<ul>
+			<li>Офіс у м.Дніпро: &#9971; вул. Володимира Великого, буд.7, офіс 2</li>
+			<li>Телефон: <a href="tel:380972263232">&#9742; 38(097) 226 32 32</a> </li>
+			<li>E-mail: <a href="mailto:nvseverin@i.ua">&#9993; nvseverin@i.ua</a></li>
+			<li>Ми у соцмережах: <a href="https://www.instagram.com/accounts/login/?next=/nadinseverin/">Instagram</a>
+			</li>
+		</ul>
+		<p>&reg; NBuses</p>
+	</footer>
+</body>
+</html>
