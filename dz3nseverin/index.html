@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="discription"
+	<meta name="description"
 		content="Мікроавтобуси для вашого бізнесу: пасажироперевезення, вантажоперевезення. Найбільший вибір, найкращі ціни. Офіційні представництва світових виробників. Серісне обслуговування та гарантія">
 	<meta name="keywords"
 		content="car shop, minbus, passenger's, freight, атомагазин, мікроавтобус, пасажироперевезення, вантажоперевезення, микроавтобус, пасажироперевозки, грузоперевозки">
 	<title>Nbuses</title>
 </head>
-
-<body bgcolor="#F87217">
+<body>
 	<header>
 		<div class="site-logo">
 			<img src="./assets/img/bus-logo.jpg" height="200" width="250" alt="NBuslogo">
@@ -34,7 +32,7 @@
 	<hr>
 	<main>
 		<div class="pictures">
-			<table bgcolor="white">
+			<table>
 				<tbody>
 					<tr>
 						<td><img src="./assets/img/mikroavtobus1.jpg" height="200" width="315" alt="minibus"></td>
@@ -48,7 +46,7 @@
 			</table>
 		</div>
 		<hr>
-		<div class="Quotation">
+		<div class="quotation">
 			<b>Марта Кетро:</b>
 			<blockquote>
 				<i>Машина вона як жінка. Справа не в тому, скільки вона їсть, а в тому, скільки приносити
@@ -56,7 +54,7 @@
 			</blockquote>
 			<hr>
 		</div>
-		<section class="About">
+		<section class="about">
 			<h3>Види і марки мікроавтобусів</h3>
 			<p>
 				<strong>Мікроавтобус</strong> – транспортний засіб особливо малого класу (довжина – до 5
@@ -133,14 +131,11 @@
 		<section class="testdrive">
 			<h3>Ви маєте можливість записатись на тест-драйв нової моделі Минивэн Toyota Alphard III.</h3>
 			<form method="post" action="https://fom.in.ua/echo">
-				<label>Зазначте зручний
-					для вас час
-					<input type="datetime-local" name="timetestdrive">
-				</label>
+				<label for="time">Зазначте зручний для вас час</label>
+				<input type="datetime-local" id="time" name="timetestdrive">
 				<br>
-				<label> Завантажте скан водійського посвідчення
-					<input type="file" name="driver's license">
-				</label>
+				<label for="scan"> Завантажте скан водійського посвідчення</label>
+				<input type="file" id="scan" name="driver's license">
 				<br>
 				<button>Відправити та записатись</button>
 			</form>
@@ -165,5 +160,4 @@
 		<p>&reg; NBuses</p>
 	</footer>
 </body>
-
 </html>

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Registration</title>
 </head>
-
-<body bgcolor="#BCE954">
+<body>
 	<header>
 		<div>
 			<img src="../assets/img/bus-logo.jpg" height="200" width="250" alt="NBuslogo">
@@ -33,31 +31,46 @@
 			<h2>У зареєстрованих користувачів життя простіше! <br>Введіть, будь ласка, дані для реєстрації на сайті:
 				&#9997;</h2>
 			<form method="post" action="https://fom.in.ua/echo">
-				<label>Ім'я: <br>
-					<input type="text" name="fname" placeholder="Введіть ваше ім'я" required>
-				</label><br>
-				<span>Стать:</span>
-				<input type="radio" id="female" name="sex" value="жіноча">
-				<label for="female">жіноча</label>
-				<input type="radio" id="male" name="sex" value="чоловіча">
-				<label for="male">чоловіча</label><br>
-				<label>Місяць та рік народження: <br>
-					<input type="month" name="birthday">
-				</label><br>
-				<label>E-mail: <br>
-					<input type="email" name="email" placeholder="Введіть свій e-mail" required>
-				</label><br>
-				<label>Ваш номер телефона: <br>
-					+38
-					<input type="tel" name="phone" placeholder="Введіть номер телефона" pattern="[0-9]{10}" required>
-				</label><br>
-				<small>Номер у форматі: 0972222222</small><br>
-				<label>Ваш пароль: <br>
-					<input type="password" name="password" placeholder="Придумайте пароль" required>
-				</label><br>
-				<label>Повторіть пароль: <br>
-					<input type="password" name="repeat-password" placeholder="Повторіть пароль" required>
-				</label><br>
+				<div>
+					<label for="name">Ім'я:</label>
+					<br>
+					<input type="text" id="name" name="fname" placeholder="Введіть ваше ім'я" required>
+				</div>
+				<div>
+					<span>Стать:</span>
+					<input type="radio" id="female" name="sex" value="жіноча">
+					<label for="female">жіноча</label>
+					<input type="radio" id="male" name="sex" value="чоловіча">
+					<label for="male">чоловіча</label>
+				</div>
+				<div>
+					<label for="birthday">Місяць та рік народження:</label>
+					<br>
+					<input type="month" id="birthday" name="birthday">
+				</div>
+				<div>
+					<label for="email">E-mail:</label>
+					<br>
+					<input type="email" id="email" name="email" placeholder="Введіть свій e-mail" required>
+				</div>
+				<div>
+					<label for="tel">Ваш номер телефона:<br>
+						+38</label>
+					<input type="tel" id="tel" name="phone" placeholder="Введіть номер телефона" pattern="[0-9]{10}"
+						required>
+					<br>
+					<small>Номер у форматі: 0972222222</small><br>
+				</div>
+				<div>
+					<label for="password">Ваш пароль:</label>
+					<br>
+					<input type="password" id="password" name="password" placeholder="Придумайте пароль" required>
+					<br>
+					<label for="repeat">Повторіть пароль:</label>
+					<br>
+					<input type="password" id="repeat" name="repeat-password" placeholder="Повторіть пароль" required>
+				</div>
+				<br>
 				<input type="hidden" name="userID" value="1127">
 				<input type="submit" value="Зареєструватись">
 				<input type="reset" value="Очистити дані">
@@ -77,5 +90,4 @@
 		<p>&reg; NBuses</p>
 	</footer>
 </body>
-
 </html>

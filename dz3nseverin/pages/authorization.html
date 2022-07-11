@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Authorization</title>
 </head>
-
-<body bgcolor="#848b79">
+<body>
 	<header>
 		<div>
 			<img src="../assets/img/bus-logo.jpg" height="200" width="250" alt="NBuslogo">
@@ -28,23 +26,24 @@
 		</div>
 		<hr>
 	</header>
-
 	<main>
 		<section class="authorization">
 			<h2>Раді бачити Вас знову! <br>Введіть, будь ласка, дані для авторизації на сайті:
 				&#9997;</h2>
 			<form method="post" action="https://fom.in.ua/echo">
-				<label> Ваш E-mail: <br>
-					<input type="email" name="email" placeholder="Введіть свій e-mail">
-				</label><br>
-				<label>Ваш пароль: <br>
-					<input type="password" name="password" placeholder="Введіть пароль" required>
-				</label><br>
-				<label>Запам'ятати пароль
-					<input type="checkbox" name="memorize-password" value="memorize-password">
-				</label><br>
-				<button>Увійти</button>
-				<input type="reset" value="Очистити дані">
+				<label for="email"> Ваш E-mail:</label>
+				<br>
+				<input type="email" id="email" name="email" placeholder="Введіть свій e-mail">
+				<br>
+				<label for="password">Ваш пароль:</label>
+				<br>
+				<input type="password" name="password" id="password" placeholder="Введіть пароль" required>
+				<br>
+				<label for="memorize">Запам'ятати пароль</label>
+				<input type="checkbox" id="memorize" name="memorize-password" value="memorize-password">
+				<br>
+				<input type="submit" value="Увійти">
+				<button type="reset">Очистити дані</button>
 			</form>
 			<hr>
 		</section>

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Registration</title>
 </head>
-
-<body bgcolor="#D2B9D3">
+<body>
 	<header>
 		<div>
 			<img src="../assets/img/bus-logo.jpg" height="200" width="250" alt="NBuslogo">
@@ -24,89 +22,111 @@
 				<a href="../index.html">Головна |</a>
 				<a href="./regisration.html">Реєстрація |</a>
 				<a href="./authorization.html"> Авторизація |</a>
-
 			</nav>
 		</div>
 		<hr>
 	</header>
-
 	<main>
 		<section class="search">
 			<h2>Маємо що Вам запропонувати! <br>Оберіть, будь ласка, характеристики для Вашої майбутньої машини:
 				&#9989;</h2>
 			<form method="post" action="https://fom.in.ua/echo">
-				<p><b>Вживаність:</b></p>
-				<input type="radio" id="using1" name="use" value="new" required>
-				<label for="using1">Новий</label>
-				<input type="radio" id="using2" name="use" value="used">
-				<label for="using2">Б/в</label>
+				<div>
+					<label><b>Вживаність:</b></label>
+					<input type="radio" id="using1" name="use" value="new" required>
+					<label for="using1">Новий</label>
+					<input type="radio" id="using2" name="use" value="used">
+					<label for="using2">Б/в</label>
+				</div>
 				<br>
-				<p><b>Оберіть тип мікроавтобуса:</b></p>
-				<select id="sel1" name="type" multiple>
-					<option value="passenger">пасажирський</option>
-					<option value="miniven" disabled>мінівен</option>
-					<option value="mixed">вантажно-пасажирський</option>
-					<option value="cargo">вантажний</option>
-				</select>
+				<div>
+					<label for="type"><b>Оберіть тип мікроавтобуса:</b></label>
+					<br>
+					<select id="type" name="type" multiple>
+						<option value="passenger">пасажирський</option>
+						<option value="miniven" disabled>мінівен</option>
+						<option value="mixed">вантажно-пасажирський</option>
+						<option value="cargo">вантажний</option>
+					</select>
+				</div>
 				<br>
-				<p><b>Зазначте марку авто:</b></p>
-				<select id="sel2" name="model">
-					<option>...</option>
-					<option>Ford</option>
-					<option>Mercedes-Benz</option>
-					<option>Hyundai</option>
-					<option>Citroen</option>
-					<option>VW</option>
-					<option>Peugeot</option>
-					<option disabled>FIAT</option>
-					<option disabled>Toyota</option>
-				</select>
+				<div>
+					<label for="model"><b>Зазначте марку авто:</b></label>
+					<br>
+					<select id="model" name="model">
+						<option>...</option>
+						<option>Ford</option>
+						<option>Mercedes-Benz</option>
+						<option>Hyundai</option>
+						<option>Citroen</option>
+						<option>VW</option>
+						<option>Peugeot</option>
+						<option disabled>FIAT</option>
+						<option disabled>Toyota</option>
+					</select>
+				</div>
 				<br>
-				<p><b>Бажаний рік випуску:</b></p>
-				<label>від</label>
-				<input type="number" name="minyear" min="2009" max="2022" value="2009">
-				<label>до</label>
-				<input type="number" name="maxyear" min="2009" max="2022" value="2022">
+				<div>
+					<label><b>Бажаний рік випуску:</b></label>
+					<br>
+					<label for="minyear">від</label>
+					<input type="number" id="minyear" name="minyear" min="2009" max="2022" value="2009">
+					<label for="maxyear">до</label>
+					<input type="number" id="maxyear" name="maxyear" min="2009" max="2022" value="2022">
+				</div>
 				<br>
-				<p><b>Кількість сидінь:</b></p>
-				<input type="number" name="minseats" max="22" min="3" placeholder="від 3">
-				<input type="number" name="maxseats" max="22" min="3" placeholder=" до 22">
+				<div>
+					<label><b>Кількість сидінь:</b></label>
+					<br>
+					<input type="number" name="minseats" max="22" min="3" placeholder="від 3">
+					<input type="number" name="maxseats" max="22" min="3" placeholder=" до 22">
+				</div>
 				<br>
-				<p><b>Вантажомісткість, тонн:</b></p>
-				<label>Від 0,5 т
-					<input type="range" name="weigh" step="0.5" min="0.5" max="3.5">
-					до 3,5
-				</label>
+				<div>
+					<label for="weigh"><b>Вантажомісткість, тонн:</b>
+						<br>
+						Від 0,5 т
+					</label>
+					<input type="range" id="weigh" name="weigh" step="0.5" min="0.5" max="3.5">
+					<label for="weigh">до 3,5</label>
+				</div>
 				<br>
-				<p><b>Оберіть бажаний колір:</b></p>
-				<input type="color" name="favcolor" value="#E6A9EC">
+				<div>
+					<label for="fav-color"><b>Оберіть бажаний колір:</b></label>
+					<input type="color" id="fav-color" name="fav-color" value="#E6A9EC">
+					<br>
+				</div>
+				<div>
+					<label><b>Ціна</b></label>
+					<input type="radio" id="cur1" name="currency" value="UAH">
+					<label for="cur1">грн</label>
+					<input type="radio" id="cur2" name="currency" value="USD">
+					<label for="cur2">дол</label>
+					<br>
+					<label for="minprice">від </label>
+					<input type="number" id="minprice" name="minprice" min="0" max="150000" value="0">
+					<label for="maxprice">до </label>
+					<input type="number" id="maxprice" name="maxprice" min="1" max="150000" value="1">
+				</div>
 				<br>
-				<p><b>Ціна</b></p>
-				<input type="radio" id="cur1" name="currency" value="UAH">
-				<label for="cur1">грн</label>
-				<input type="radio" id="cur2" name="currency" value="USD">
-				<label for="cur2">дол</label>
+				<div>
+					<label><b>Наявність:</b></label>
+					<input type="checkbox" id="aval1" name="availability" value="present">
+					<label for="aval1">в наявності</label>
+					<input type="checkbox" id="aval2" name="availability" value="onorder">
+					<label for="aval2">під замовлення</label>
+				</div>
 				<br>
-				<label>від </label>
-				<input type="number" name="minprice" min="0" max="150000" value="0">
-				<label>до </label>
-				<input type="number" name="maxprice" min="1" max="150000" value="1">
-				<br>
-				<p><b>Наявність:</b></p>
-				<input type="checkbox" id="aval1" name="availability1" value="present">
-				<label for="aval1">в наявності</label>
-				<input type="checkbox" id="aval2" name="availability2" value="onorder">
-				<label for="aval2">під замовлення</label>
-				<br>
-				<p><b>Ваші побажання для замовлення:</b></p>
-				<textarea></textarea>
-				<hr>
-				<button>Пошук</button>
-				<input type="reset" name="Очистити">
+				<div>
+					<label for="wishes"><b>Ваші побажання для замовлення:</b></label>
+					<textarea id="wishes" name="wishes"></textarea>
+					<hr>
+					<button>Пошук</button>
+					<input type="reset" name="Очистити">
+				</div>
 				<hr>
 			</form>
 		</section>
-
 	</main>
 	<footer>
 		<h3>Наші контакти:</h3>
@@ -120,5 +140,4 @@
 		<p>&reg; NBuses</p>
 	</footer>
 </body>
-
 </html>
