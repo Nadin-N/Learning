@@ -1,0 +1,26 @@
+body {
+	font: 14px Verdana, sans-serif;
+	background-color: #f8f2f8;
+	text-align: center;
+}
+
+img {
+	padding-top: 20px;
+	width: 200px;
+	height: 300px;
+}
+
+ul li {
+	border: 1px solid grey;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0.5%;
+	padding: 4px;
+	width: 30%;
+	height: 600px;
+	background-color: cadetblue;
+}
+
+p {
+	text-align: justify;
+}
