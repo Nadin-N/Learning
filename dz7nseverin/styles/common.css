@@ -1,0 +1,157 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 165.6%;
+	color: #727272;
+	background-color: #EEEFF1;
+}
+
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+.menu {
+	display: inline-block;
+	padding-top: 79px;
+}
+
+.menu a {
+	margin-right: 42px;
+	font-weight: 500;
+	letter-spacing: .1em;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.menu a:first-child,
+.menu a:hover {
+	color: #34547A;
+}
+
+.design {
+	padding: 162px 0 141px;
+}
+
+.design h2 {
+	font-weight: 500;
+	font-size: 300%;
+	line-height: 164.6%;
+	color: #000;
+}
+
+.design p {
+	padding-right: 52.3%;
+	line-height: 162.5%;
+	margin: 60px 0 65px 0;
+}
+
+.write {
+	padding: 0 41px;
+	line-height: 406.25%;
+	background-color: #34547A;
+	letter-spacing: .1em;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+.about {
+	padding: 112px 0 100px;
+	background-color: #fff;
+}
+
+.about-me h3,
+.working h3 {
+	font-size: 200%;
+	line-height: 118.75%;
+	color: #000;
+	font-weight: 500;
+	text-align: center;
+}
+
+.about-me p,
+.working p {
+	padding: 0 26.2%;
+	margin: 50px auto 0;
+	text-align: center;
+}
+
+.projects {
+	background-color: #34547A;
+	padding: 103px 0;
+}
+
+.projects .number {
+	color: #FFF;
+	display: inline-block;
+}
+
+.projects .number:not(:last-child) {
+	margin-right: 45px;
+}
+
+.projects .number .number-item {
+	display: inline-block;
+}
+
+.projects .number img {
+	padding-right: 20px;
+}
+
+.projects .number .number-item p {
+	line-height: 162.5%;
+}
+
+.projects .number .number-item p:first-child {
+	font-size: 131.25%;
+	line-height: 119%;
+	font-weight: 500;
+}
+
+.work {
+	padding: 100px 0;
+	background: #EEEFF1;
+}
+
+.work .video {
+	margin-top: 57px;
+	position: relative;
+}
+
+video[poster] {
+	width: 100%;
+}
+
+.play {
+	background-color: #fff;
+	border-radius: 50%;
+	line-height: 100px;
+	font-size: 50px;
+	padding: 0 25px 0 30px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+}
+
+.data {
+	background-color: #34547A;
+	padding: 50px 0;
+}
+
+.data .contacts {
+	color: #FFF;
+}
+
+.data .contacts p {
+	font-size: 131.25%;
+	line-height: 119%;
+	font-weight: 500;
+}
+
+.data .contacts p:last-child {
+	font-size: 81.25%;
+	line-height: 131.25%;
+	margin-top: 20px;
+}
